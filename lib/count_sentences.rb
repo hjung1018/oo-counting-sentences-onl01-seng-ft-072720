@@ -28,21 +28,7 @@ class String
   end
   
 
-  def count_sentences
- 
-  array = []
-  
-if no_question = string.split("?")
-  array << self
-end
-
-if no_period =  string.split(".")
-  array << self
-end
-
-if no_exclaim = string.split("!")
-  array << self
-end
-
-  array.length  
+   def count_sentences
+    self.split(/\.|\?|\!/).delete_if {|w| w.size < 2}.size
+  end
 end
