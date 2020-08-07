@@ -29,10 +29,16 @@ class String
   
 
   def count_sentences
-  i = 0
-  if self.end_with(".") || self.end_with("!") || self.end_with("?")
-    i +=
-  else
-    i = i
-  end
+ 
+  array = []
+if no_question = string.split("?")
+  array << self
+end
+if no_period =  string.split(".")
+  array << self
+end
+if no_exclaim = string.split("!")
+  array << self
+end
+  array.length  
 end
