@@ -34,9 +34,11 @@ class String
 if no_question = string.split("?")
   array << self
 end
+
 if no_period =  string.split(".")
   array << self
 end
+
 if no_exclaim = string.split("!")
   array << self
 end
