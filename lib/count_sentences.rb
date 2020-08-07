@@ -31,6 +31,7 @@ class String
   def count_sentences
  
   array = []
+  
 if no_question = string.split("?")
   array << self
 end
@@ -42,5 +43,6 @@ end
 if no_exclaim = string.split("!")
   array << self
 end
+
   array.length  
 end
