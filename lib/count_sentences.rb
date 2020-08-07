@@ -16,6 +16,7 @@ class String
     elsif !self.end_with?("?")
       false
     end
+  end
   
 
   def exclamation?
